@@ -16,3 +16,21 @@ sudo yum -y install http-parser jansson-devel protobuf-c-devel
 ```
 
 Run `git submodule update --init` to fetch the submodules.
+
+== Compile and install
+
+[source,sh]
+----
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+$ sudo make install
+----
+
+To test:
+
+[source,sh]
+----
+$ make test
+----
